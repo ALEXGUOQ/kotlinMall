@@ -32,4 +32,8 @@ class RegisterActivity : BaseMvpActivity<RegisterPresenter>(),RegisterView {
             Toast.makeText(this,"注册失败",Toast.LENGTH_SHORT).show()
         }
     }
+
+    override fun onError(msg: String) {
+
+    }
 }

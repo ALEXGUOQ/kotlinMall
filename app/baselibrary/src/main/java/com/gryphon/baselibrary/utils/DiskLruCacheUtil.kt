@@ -1,4 +1,4 @@
-package com.example.disklrucachedemo
+package com.gryphon.baselibrary.utils
 
 import android.content.Context
 import android.content.pm.PackageManager
