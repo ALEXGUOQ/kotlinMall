@@ -5,6 +5,6 @@ import rx.Observable
 
 class RegisterServiceImpl : RegisterService {
     override fun register(phone: String, pwd: String, verifyCode: String): Observable<Boolean> {
-        return Observable.just(false)
+        return Observable.just(true)
     }
 }
