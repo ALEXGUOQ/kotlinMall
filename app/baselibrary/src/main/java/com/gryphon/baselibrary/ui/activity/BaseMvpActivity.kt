@@ -1,6 +1,5 @@
 package com.gryphon.baselibrary.ui.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import com.gryphon.baselibrary.presenter.BasePresenter
 import com.gryphon.baselibrary.presenter.view.BaseView
 
@@ -13,6 +12,6 @@ open class BaseMvpActivity<T:BasePresenter<*>>:BaseActivity(),BaseView {
     override fun hideLoading() {
     }
 
-    override fun onError() {
+    override fun onError(msg: String) {
     }
 }

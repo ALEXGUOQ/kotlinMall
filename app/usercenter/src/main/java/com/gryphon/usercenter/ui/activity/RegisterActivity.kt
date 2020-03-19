@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_register.*
 /**
  * 注册页面
  */
-class RegisterActivity : BaseMvpActivity<RegisterPresenter>(),RegisterView {
+class RegisterActivity : BaseMvpActivity<RegisterPresenter>(), RegisterView {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,15 +21,15 @@ class RegisterActivity : BaseMvpActivity<RegisterPresenter>(),RegisterView {
         mPresenter.mView = this
 
         registerBtn.setOnClickListener {
-            mPresenter.register("","","")
+            mPresenter.register("", "", "")
         }
     }
 
     override fun onRegisterResult(result: Boolean) {
-        if (result){
-            Toast.makeText(this,"注册成功",Toast.LENGTH_SHORT).show()
-        }else{
-            Toast.makeText(this,"注册失败",Toast.LENGTH_SHORT).show()
+        if (result) {
+            Toast.makeText(this, "注册成功", Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(this, "注册失败", Toast.LENGTH_SHORT).show()
         }
     }
 

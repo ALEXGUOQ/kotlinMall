@@ -12,13 +12,13 @@ class RegisterPresenter : BasePresenter<RegisterView>() {
     /**
      * 注册
      */
-    fun register(phone:String,pwd:String,verifyCode:String){
+    fun register(phone: String, pwd: String, verifyCode: String) {
 
-        val userService:RegisterService = RegisterServiceImpl()
-        userService.register(phone,pwd, verifyCode)
+        val userService: RegisterService = RegisterServiceImpl()
+        userService.register(phone, pwd, verifyCode)
             .observeOn(AndroidSchedulers.mainThread())
             .subscribeOn(Schedulers.io())
-            .subscribe(object :Subscriber<Boolean>(){
+            .subscribe(object : Subscriber<Boolean>() {
                 override fun onNext(t: Boolean?) {
                     t?.let { mView.onRegisterResult(it) }
                 }

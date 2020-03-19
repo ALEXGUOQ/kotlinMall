@@ -8,6 +8,9 @@ import java.io.*
 import java.security.MessageDigest
 import java.security.NoSuchAlgorithmException
 
+/**
+ * 硬盘缓存工具类
+ */
 class DiskLruCacheUtil(mContext: Context, fileName: String) {
     private var mDiskLurCache: DiskLruCache? = null
 
