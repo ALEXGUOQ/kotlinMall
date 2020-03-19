@@ -1,2 +1,7 @@
 .idea
 .gradle
+/app/usercenter/usercenter.iml
+/app/provider/provider.iml
+/app/baselibrary/baselibrary.iml
+local.properties
+/local.properties
