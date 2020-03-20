@@ -7,5 +7,4 @@ package com.gryphon.usercenter.data.protocol
  * @author: gqy
  * @date: 2020-03-20 10:35
  */
-class RegisterRequest {
-}
+data class RegisterRequest(val phone: String, val pwd: String, val verifyCode: String)

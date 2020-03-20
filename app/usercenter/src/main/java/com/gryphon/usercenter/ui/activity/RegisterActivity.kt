@@ -17,12 +17,15 @@ class RegisterActivity : BaseMvpActivity<RegisterPresenter>(), RegisterView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        mPresenter = RegisterPresenter()
-        mPresenter.mView = this
+        initInjection()
 
+        mPresenter.mView = this
         registerBtn.setOnClickListener {
-            mPresenter.register("", "", "")
+            mPresenter.register("11", "11", "11")
         }
+    }
+
+    private fun initInjection() {
     }
 
     override fun onRegisterResult(result: Boolean) {

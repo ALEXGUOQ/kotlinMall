@@ -6,6 +6,7 @@ if (isUserModule.toBoolean()){
 
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 29
@@ -69,5 +70,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     implementation project(path: ':app:provider')
-    implementation project(path: ':app:baselibrary')
+
+    kapt 'com.google.dagger:dagger-compiler:2.24'
 }

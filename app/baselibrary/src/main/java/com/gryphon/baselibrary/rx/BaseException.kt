@@ -7,5 +7,5 @@ package com.gryphon.baselibrary.rx
  * @author: gqy
  * @date: 2020-03-20 14:10
  */
-class BaseException {
+class BaseException(val status: Int, val msg: String) : Throwable() {
 }

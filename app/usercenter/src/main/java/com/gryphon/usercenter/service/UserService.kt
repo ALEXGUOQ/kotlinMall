@@ -2,7 +2,7 @@ package com.gryphon.usercenter.service
 
 import rx.Observable
 
-interface RegisterService {
+interface UserService {
     /**
      * 注册
      */
