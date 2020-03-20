@@ -28,6 +28,16 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    kotlinOptions{
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+
     /* 动态配置加载的资源文件 */
     sourceSets{
         main{
