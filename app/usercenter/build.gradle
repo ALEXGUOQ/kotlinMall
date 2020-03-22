@@ -71,5 +71,5 @@ dependencies {
 
     implementation project(path: ':app:provider')
 
-    kapt 'com.google.dagger:dagger-compiler:2.24'
+    kapt 'com.google.dagger:dagger-compiler:2.27'
 }

@@ -24,6 +24,6 @@ class RegisterPresenter @Inject constructor() : BasePresenter<RegisterView>() {
                 override fun onError(e: Throwable?) {
                     with(mView) { onError("注册失败!") }
                 }
-            })
+            },lifecycleProvider)
     }
 }
